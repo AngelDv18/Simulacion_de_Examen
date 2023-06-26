@@ -48,6 +48,10 @@ namespace Aplicacion_de_tienda_2._0._2.Entity
                     Console.WriteLine("Debes ser mayor de 18 años para realizar una compra.");
                     return 0;
                 }
+                Console.WriteLine("--------------Datos del Cliente.-------------------");
+                Console.WriteLine($"Cliente: {cliente.Nombre} {cliente.Apellido}");
+                Console.WriteLine($"Edad: {cliente.Edad}");
+                Console.WriteLine($"Dirección: {cliente.Direccion}");
             }
             catch (FormatException)
             {
@@ -56,7 +60,7 @@ namespace Aplicacion_de_tienda_2._0._2.Entity
             }
             finally
             {
-                Console.WriteLine("--------------Total de Compra.-------------------");
+                Console.WriteLine("----------------------------------------------------");
                 Console.WriteLine("Gracias por utilizar el programa. ¡Hasta luego!");
                 Console.ReadLine();
             }

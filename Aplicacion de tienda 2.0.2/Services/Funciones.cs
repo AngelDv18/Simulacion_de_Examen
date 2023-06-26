@@ -18,7 +18,7 @@ namespace Aplicacion_de_tienda_2._0._2.Services
             {
                 if (totalCompra >= 10000)
                 {
-                    descuento = totalCompra * 0.3;
+                    descuento = totalCompra * 0.30;
                     Console.WriteLine("¡Felicidades! Obtuviste un descuento del 30%.");
                     Console.WriteLine("Selecciona la cantidad de meses sin intereses:");
                     Console.WriteLine("1. 3 meses");
@@ -40,7 +40,7 @@ namespace Aplicacion_de_tienda_2._0._2.Services
                 }
                 else if (totalCompra >= 5000)
                 {
-                    descuento = totalCompra * 0.2;
+                    descuento = totalCompra * 0.20;
                     Console.WriteLine("¡Enhorabuena! Obtuviste un descuento del 20% y 3 meses sin intereses.");
                 }
                 else
@@ -54,6 +54,7 @@ namespace Aplicacion_de_tienda_2._0._2.Services
                     Console.WriteLine($"Monto ingresado: {totalCompra:C}");
                     Console.WriteLine($"Descuento obtenido: {descuento:C}");
                     Console.WriteLine($"Monto con descuento: {montoConDescuento:C}");
+                    Console.WriteLine("------------------------------------");
                 }
 
                 return descuento;
